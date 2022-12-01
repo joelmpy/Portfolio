@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+
+/* Mise en page */
+:root {
+    --color-bg: #1f1f39;
+    --color-bg-variant: #2c2C6c;
+    --color-bg-variant-contact: #13134b;
+    --color-btn :#000;
+    --color-bg-btn :#f1f1f1; 
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* Navbar */
+
+  .logo img {
+    width: 150px;
+    height: 80px;
+  }
+
+  .navBar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #11101b;
+  }
+
+  /* Navbar-menu */
+
+  .navBar .nav-links ul {
+    display: flex;
+  }
+  
+  .nav-links ul li {
+    margin: 0 15px;
+  }
+
+  .nav-links ul li a {
+    margin: 0 25px;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    color: var(--color-bg-btn);
+  }
+
+  .nav-links ul li a:hover {
+    color: #11101b;
+    background: #fefefe;
+  }
+  
+  .navBar .menu-hamburger {
+    width: 35px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    display: none;
+    cursor: pointer;
+  }
+
+  /* Navigation mobile */
+
+  @media screen and (max-width : 880px) {
+    .navBar {
+      padding: 0;
+    }
+  
+    .navBar .logo {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+  
+    .navBar .menu-hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: rgb(255, 255, 255, 0, 20);
+      backdrop-filter: blur(3px);
+      width: 100%;
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -100%;
+      transition: all 0.5s ease;
+      background-color: red;
+    }
+  
+    .nav-links.mobile-menu {
+      margin-left: 0;
+    }
+  
+    .nav-links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navBar .nav-links ul li {
+      margin: 25px 0px;
+      font-size: 1.2rem;
+    }
+  }
+
+/* Acceuil */
+  .accueil {
+    background: url(./assets/imgPres.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+  }
+
+  .accueil h1 {
+    font-size: 80px;
+    margin: 0 60px;
+    padding-top: 210px;
+  }
+
+  .accueil .text-animation {
+    font-size: 45px;
+    margin: 0 60px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-acc {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    background: var(--color-btn);
+    justify-content: center;
+    align-items: center;
+    color: var(--color-bg-btn);
+    margin: 10px 0 0 0;
+    border-radius: 2px;
+    font-size: 18px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .btn-acc:hover {
+    transform: scale(1.02);
+  }
+  
+  .btn-acc1 {
+    margin: 10px 0 0 60px;
+  }
+  
+  .btn-acc2 {
+    background:  transparent;
+    border: 2px solid black;
+    color: black;
+    font-weight: 700;
+  }
